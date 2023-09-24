@@ -35,7 +35,7 @@ go get -u github.com/gorilla/mux
 
 ## Configuration
 
-The SQLite database is configured to have a table named `delegations` with the following columns:
+The SQLite database (`delegations.db`) is located in the same directory as the `main.go` file. If you need to change the directory, modify the database path in the `initDB()` function. The database is configured to have a table named `delegations` with the following columns:
 
 - `timestamp`: Stores the time of the delegation.
 - `amount`: Stores the amount involved in the delegation.
